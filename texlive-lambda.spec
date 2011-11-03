@@ -1,5 +1,11 @@
+# revision 15878
+# category Package
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-lambda
-Version:	20111102
+Version:	20111103
 Release:	1
 Summary:	TeXLive lambda package
 Group:		Publishing
@@ -61,6 +67,7 @@ TeXLive lambda package.
 %{_texmfdistdir}/tex/lambda/base/ut1enc.def
 %{_texmfdistdir}/tex/lambda/config/lambda.ini
 %{_texmfdistdir}/tex/lambda/config/language.dat
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -71,3 +78,5 @@ TeXLive lambda package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

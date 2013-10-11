@@ -1,12 +1,12 @@
-# revision 15878
+# revision 28669
 # category Package
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-lambda
-Version:	20111103
-Release:	2
+Version:	20131011
+Release:	1
 Summary:	TeXLive lambda package
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -43,8 +43,6 @@ TeXLive lambda package.
 %{_texmfdistdir}/tex/lambda/base/lambda.tex
 %{_texmfdistdir}/tex/lambda/base/lchcmr.fd
 %{_texmfdistdir}/tex/lambda/base/lchenc.def
-%{_texmfdistdir}/tex/lambda/base/litcmr.fd
-%{_texmfdistdir}/tex/lambda/base/litenc.def
 %{_texmfdistdir}/tex/lambda/base/ocherokee.sty
 %{_texmfdistdir}/tex/lambda/base/odev.sty
 %{_texmfdistdir}/tex/lambda/base/ojapan.sty
@@ -69,17 +67,3 @@ TeXLive lambda package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111103-2
-+ Revision: 753124
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111103-1
-+ Revision: 718803
-- texlive-lambda
-- texlive-lambda
-- texlive-lambda
-- texlive-lambda
-

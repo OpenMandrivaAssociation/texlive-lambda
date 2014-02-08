@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-lambda
 Version:	20111103
-Release:	2
+Release:	3
 Summary:	TeXLive lambda package
 Group:		Publishing
 URL:		http://tug.org/texlive
